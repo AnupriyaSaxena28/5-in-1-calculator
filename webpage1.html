@@ -1,0 +1,157 @@
+<html>
+
+<head><title>5 in 1 calculator</title>
+
+<script>
+     function add( )
+	{
+	a= document.getElementById("fn").value;
+	b= document.getElementById("sn").value;
+	
+	c= parseFloat(a)+parseFloat(b)
+	document.getElementById("sum").value= c;
+	}
+     function avg( )
+	{
+	a= document.getElementById("fn").value;
+	b= document.getElementById("sn").value; 
+	c= document.getElementById("tn").value;
+	
+	average=(parseFloat(a)+parseFloat(b)+parseFloat(c))/3
+	document.getElementById("av").value= average;
+
+	}
+      function circle( )
+	{
+	r= document.getElementById("rd").value;
+	
+	ar=3.14*parseFloat(r)*parseFloat(r)
+	document.getElementById("a").value= ar;
+
+	pr=2*3.14*parseFloat(r)
+	document.getElementById("p").value= pr;
+	}
+       function vol( )
+	{
+	a= document.getElementById("s").value;
+	
+	volume=parseFloat(a)*parseFloat(a)*parseFloat(a)
+	document.getElementById("v").value= volume;
+	
+	lsa=4*parseFloat(a)*parseFloat(a)
+	document.getElementById("l").value= lsa;
+
+	tsa=6*parseFloat(a)*parseFloat(a)
+	document.getElementById("t").value= tsa;
+	}
+        function si( )
+	{
+	p= document.getElementById("pr").value;
+	r= document.getElementById("rt").value;
+	t= document.getElementById("tm").value;
+
+	si= (parseFloat(p)*parseFloat(r)*parseFloat(t))/100
+	document.getElementById("SI").value= si;
+	
+	a= parseFloat(p)+parseFloat(si);
+	document.getElementById("amount").value=a;
+               }
+</script>
+<style>
+#list{
+color:pink;
+}
+#add{
+color:black;
+}
+#avg{
+color:black;
+size:6;
+}
+<
+</style>
+</head>
+
+<body link="white" alink="black" vlink="yellow"  >
+<div id="list" style=";background-color:purple;"><br><br>
+<font face="Algerian" size="10" color="yellow"><center><b><u>5 IN 1 CALCULATOR</u></b></center></font><br>
+
+<font face="BaskervilleOldFace" size="6" color="majenta">Hello ! and welcome to this<b> 5 in 1 calculator</b> which provides the facility to calculate:</font><br>
+<font size="5"><UL type="disk">
+
+<li>Sum of two numbers - <a href="#SUM">Open</a></li>
+
+<li>Average of three numbers - <a href="#AVG">Open</a></li>
+
+<li>Area and Perimeter of a circle - <a href="#CIRCLE">Open</a></li>
+
+<li>Volume, LSA and TSA of a cube - <a href="#CUBE">Open</a></li>
+
+<li>Simple Interest and Amount - <a href="#SI">Open</a></li>
+
+</UL>
+</form><font face="Lucidahandwriting" size="5" color="majenta">Hope it helps you !!</font><br>
+
+<font face="Lucidahandwriting" size="5" color="majenta">Thankyou !!</font><br>
+
+<br>
+
+<br>
+
+
+</div>
+<div id="add"  style=";background-color:pink;"><br><br>
+<form>
+<a name="SUM">
+<font face="Algerian" size="8" color="red"><center><b><u>ADDITION OF TWO NUMBERS</u></b></center></font><br><br>
+Enter the first number :<input type="text" id="fn"><br><br>
+Enter the second number :<input type="text" id="sn"><br><br>
+<input type="button"  value="CALCULATE" onclick="add( )"><br><br>
+Sum of both Numbers : <input type="text" id="sum">
+<br><br><br></div>
+<div id="avg" style=";background-color:orange;"><br><br>
+<form>
+<a name="AVG">
+<font face="Algerian" size="8" color="brown"><center><b><u>AVERAGE OF THREE NUMBERS</u></b></center></font><br><br>
+Enter the first number :<input type="text" id="fn"><br><br>
+Enter the second number :<input type="text" id="sn"><br><br>
+Enter the third number :<input type="text" id="tn"><br><br>
+<input type="button"  value="CALCULATE" onclick="avg( )"><br><br>
+Average of the three numbers: <input type="text" id="av"><br><br><br>
+</form>
+</div>
+<div id="cir" style=";background-color:yellow;"><br><br>
+<form>
+<a name="CIRCLE">
+<font face="Algerian" size="8" color="brown"><center><b><u>AREA AND PERIMETER OF CIRCLE</u></b></center></font><br><br>
+Enter the radius of the circle :<input type="text" id="rd"><br><br>
+<input type="button"  value="CALCULATE" onclick="circle( )"><br><br>
+Area of the circle : <input type="text" id="a"><br><br>
+Perimeter of the circle : <input type="text" id="p"><br><br>
+</form>
+<br></div>
+<div id="cube" style=";background-color:skyblue;"><br><br>
+<form>
+<a name="CUBE">
+<font face="Algerian" size="8" color="blue"><center><b><u>VOLUME, LSA AND TSA OF CUBE</u></b></center></font><br><br>
+Enter the side of cube (in cm) :<input type="text" id="s"><br><br>
+<input type="button"  value="CALCULATE" onclick="vol( )"><br><br>
+Volume of cube: <input type="text" id="v"><br><br>
+Lateral Surface Area of cube: <input type="text" id="l"><br><br>
+Total Surface Area of cube: <input type="text" id="t"><br><br><br>
+</form>
+<br></div>
+<div id="si" style=";background-color:lightgreen;"><br><br>
+<form>
+<a name="SI">
+<font face="Algerian" size="8" color="green"><center><b><u>SIMPLE INTEREST AND AMOUNT</u></b></center></font><br><br>
+Enter the principal in rupees :<input type="text" id="pr"><br><br>
+Enter the rate of interest :<input type="text" id="rt"><br><br>
+Enter the time in years :<input type="text" id="tm"><br><br>
+<input type="button"  value="CALCULATE" onclick="si( )"><br><br>
+Simple Interest : <input type="text" id="SI"><br><br>
+Total Amount : <input type="text" id="amount"><br><br><br>
+</form>
+</body>
+
+</html>
